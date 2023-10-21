@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="jquery-3.7.1.js"> </script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+        <title>Registration form</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>Zesty Chefs</header>
+
+            <form action="#">
+                <div class="form first">
+                    <div class="details personal">
+                        <span class="title">Personal Details</span>
+
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Full Name</label>
+                                <input type="text" placeholder="Enter your name" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Date of Birth</label>
+                                <input type="date" placeholder="Enter birth date" required>
+
+                            </div>
+
+                            <div class="input-field">
+                                <label>Email Address</label>
+                                <input type="text" placeholder="Enter your email" required>
+
+                            </div>
+                            <div class="input-field">
+                                <label>Telegram number</label>
+                                <input type="tel" placeholder="Enter your number" required>
+                            </div>
+                            
+                            <div class="input-field">
+                                <label>Gender</label>
+                                <input type="text" placeholder="Enter your gender">
+
+                            </div>
+
+                            <div class="input-field">
+                                <label>Hall/Room number</label>
+                                <input type="text" placeholder="Enter your room number" required>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="details ID">
+                        <span class="title">Background Details</span>
+
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Food allergies</label>
+                                <input type="text" placeholder="Enter your allergies" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Reasons for joining</label>
+                                <input type="text" placeholder="Enter your reasons" required>
+
+                            </div>
+
+                            <div class="input-field">
+                                <label>Availability</label>
+                                <input type="text" placeholder="Enter your available time" required>
+
+                            </div>
+                            
+                        </div>
+
+                        <button type = "submit" class="nextBtn" onclick="openPopup()">
+                            <span class="btnText">Next</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                        <div class="popup" id="popup">
+                            <img src="404-tick.png">
+                            <h2>Thank you!</h2>
+                            <p>Your response has been received</p>
+                            <button type="button" onclick="closePopup()">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <script src="script.js"> </script>
+    </body>
+</html>
